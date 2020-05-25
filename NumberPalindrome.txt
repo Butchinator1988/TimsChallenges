@@ -1,0 +1,20 @@
+public class NumberPalindrome {       
+    public static boolean isPalindrome(int number) {
+
+        int reversedInt = 0;
+        int originalNumber = number;
+
+        while (number != 0) {
+            int remainder = number % 10;
+            reversedInt = (reversedInt * 10) + remainder;// extracts the digit
+
+            number /= 10; // discards teh digit
+        }
+
+
+        if (reversedInt == originalNumber) {
+            return true;
+        }
+        return false;
+    }
+}

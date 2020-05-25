@@ -1,0 +1,17 @@
+public class FirstLastDigitSum {    
+    public static int sumFirstAndLastDigit(int number) 
+    {
+        if(number < 0)
+		{
+		    return -1;
+		}
+        
+		String aString = Integer.toString(number);
+		
+		int firstValue = Character.getNumericValue(aString.charAt(0));
+		int lastValue = Character.getNumericValue(aString.charAt(aString.length() - 1));
+		int totalValue = firstValue + lastValue;
+		
+	    return totalValue;
+    }
+}

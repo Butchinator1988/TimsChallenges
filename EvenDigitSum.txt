@@ -1,0 +1,30 @@
+public class EvenDigitSum {
+    public static int getEvenDigitSum(int number){
+        
+		if(number < 0)
+		{
+			return -1;
+		}
+		
+		List<Integer> evenNumberList = new ArrayList<Integer>();
+		String aString = Integer.toString(number);
+		int totalValue = 0;
+		
+		for(int i = 0; i < aString.length(); i ++)
+		{
+			if(aString.charAt(i) % 2 == 0)
+			{
+				int aNumber = Character.getNumericValue(aString.charAt(i));
+				evenNumberList.add(aNumber);
+			}
+		}
+		
+		for(int i = 0; i < evenNumberList.size(); i++)
+		{
+			totalValue += evenNumberList.get(i);
+		}
+		
+		return totalValue;
+        }
+    }
+
