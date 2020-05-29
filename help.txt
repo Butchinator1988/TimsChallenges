@@ -1,0 +1,21 @@
+an app that is similar to pokemon go only you fight locals, create clans, build defenses. You can walk about with it. 
+Or stay at home and have roaming points per hour. Hold bases and earn gold to upg
+rade your home base
+
+Build fragment 
+Right click layout folder- New File - name.
+Create two .xmls
+Copy XML for main layout for both
+ChangeTextView to dislay both fragments. Click lightblub extract string resource.
+Give string name
+Do for both fragments.
+Delete context bar.
+
+Go to main activity and add the fragments
+
+
+
+
+
+
+in AS folder/SDKsextras/android/support/version4/jarfile.
